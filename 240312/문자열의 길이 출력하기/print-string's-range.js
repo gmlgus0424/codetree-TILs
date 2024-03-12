@@ -1,8 +1,9 @@
 // 변수 선언 및 입력
 const fs = require("fs");
-let input = fs.readFileSync(0).toString().trim();
+let input = fs.readFileSync(0).toString().trim().split("\n");
 
-let [str1, str2]= input;
+let [str1, str2] = input;
+
 
 let len1 = str1.length;
 let len2 = str2.length;
