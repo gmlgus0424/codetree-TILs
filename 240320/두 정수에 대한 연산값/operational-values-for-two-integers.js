@@ -1,9 +1,18 @@
-function qqq(a,b){
-    if (a<b){
-        console.log(b+25)
-        console.log (a*2)
-    }else{
-        console.log(a+25)
-        console.log(b*2)
+const fs = require("fs");
+let [a, b] = fs.readFileSync(0).toString().trim().split(" ").map(Number);
+
+function changeNumber(a, b) {
+    if (a > b) {
+        b *= 2;
+        a += 25;
+    } else {
+        a *= 2;
+        b += 25;
     }
+
+    return [a, b];
 }
+
+[a, b] = changeNumber(a, b);
+
+console.log(a, b);
