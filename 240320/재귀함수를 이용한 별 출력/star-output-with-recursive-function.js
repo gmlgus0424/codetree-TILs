@@ -1,16 +1,15 @@
-let fs = require('fs');
-let N = Number(fs.readFileSync(0).toString().split("\n"));
+const fs = require("fs");
+let n = Number(fs.readFileSync(0).toString().trim());
 
 
+function printStar(n) {
+    if (n === 0) {
+        return;
+    }
 
-
-
-let star = '';
-let result ='';
-
-for (let i = 0; i < N; i++) {
-    star += '*';
-    result += star + '\n';
+    printStar(n - 1);
+    for (let i = 0; i < n; i++) process.stdout.write("*");
+    console.log();
 }
 
-console.log(result);
+printStar(n);
