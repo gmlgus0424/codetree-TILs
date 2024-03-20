@@ -1,5 +1,5 @@
 let fs = require('fs');
-let n = fs.readFileSync().toString().trim();
+let n = Number(fs.readFileSync(0).toString().trim());
 
 
 function printStar(n) {
@@ -12,22 +12,12 @@ function printStar(n) {
 
 function star(n){
     if(n===0){
-        return
+        return;
     }
      
     process.stdout.write(n + " ");
     printStar(n-1)
 }
-const readline = require('readline');
-const rl = readline.createInterface({
-  input: process.stdin,
-  output: process.stdout
-});
-
-rl.question('Enter a number: ', (n) => {
-  n = parseInt(n);
-  printStar(n);
-  console.log("");
-  star(n);
-  rl.close();
-});
+printStar(n);
+console.log();
+star(n);
