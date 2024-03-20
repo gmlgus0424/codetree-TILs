@@ -10,14 +10,14 @@ function printStar(n) {
     process.stdout.write(n + " ");
 }
 
-function star(n){
+function printStar2(n){
     if(n===0){
         return;
     }
      
     process.stdout.write(n + " ");
-    printStar(n-1)
+    printStar2(n-1)
 }
 printStar(n);
 console.log();
-star(n);
+printStar2(n);
