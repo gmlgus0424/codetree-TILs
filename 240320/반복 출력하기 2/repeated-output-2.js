@@ -1,5 +1,5 @@
 let fs = require('fs');
-let n = fs.readFileSync('/dev/stdin').toString().split('\n');
+let n = Number(fs.readFileSync(0).toString().trim());
 
 
 
