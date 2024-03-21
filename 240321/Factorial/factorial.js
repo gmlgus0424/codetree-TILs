@@ -8,3 +8,6 @@ function aaa(n) {
     
     return aaa(n - 1) * n;
 }
+
+
+aaa(n)
