@@ -8,5 +8,3 @@ function aaa(n) {
     
     return aaa(n - 1) * n;
 }
-
-console.log(aaa(5));
