@@ -10,4 +10,4 @@ function aaa(n) {
 }
 
 
-aaa(n)
+console.log(aaa(n))
