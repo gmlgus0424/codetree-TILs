@@ -23,7 +23,7 @@ a.sort((a, b) => a - b);
 b.sort((a, b) => a - b);
 
 
-if (equal()) {
+if (aaa()) {
     console.log("Yes");
 } else {
     console.log("No");
